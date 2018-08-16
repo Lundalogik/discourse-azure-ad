@@ -52,10 +52,11 @@ end
 
 title = GlobalSetting.try(:azure_title) || "Azure AD"
 button_title = GlobalSetting.try(:azure_title) || "with Azure AD"
+color = GlobalSetting.try(:azure_color) || '#33ccff'
 
 auth_provider :title => button_title,
               :authenticator => AzureOAuth2Authenticator.new('azure_oauth2'),
               :message => "Authorizing with #{title} (make sure pop up blockers are not enabled)",
               :frame_width => 725,
               :frame_height => 500,
-              :background_color => '#71B1D1'
+              :background_color => color

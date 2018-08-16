@@ -20,9 +20,12 @@ If you're running Discourse from the Docker container, add these environment var
 * DISCOURSE_AZURE_CLIENT_SECRET
 * (optional) DISCOURSE_AZURE_TENANT_ID
 * (optional) DISCOURSE_AZURE_TITLE
+* (optional) DISCOURSE_AZURE_COLOR
+
 
 Or if you're not using Docker add the following to your `discourse.conf` file:
 
 * azure_client_id
 * azure_client_secret
 * (optional) azure_title
+* (optional) azure_color
